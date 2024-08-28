@@ -1,0 +1,107 @@
+@keyframes changeColor{
+    from {background-color: aliceblue; left:-20px; bottom: 15px;}
+    to {background-color: rgba(255, 82, 82, 0.43); left:0%; bottom: 0%; }
+    /* 0%{font-size: 1rem;}
+    25%{font-size: 1.1rem;}
+    50%{font-size: 1.2rem;}
+    75%{font-size: 1.3rem;}
+    100%{font-size: 1.4rem;} */
+  }
+  
+.modal-container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal{
+    width: 60%;
+    background-color: #E8DAEF;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.close-logo{
+    font-size: 1.5rem;
+    float: right;
+    cursor: pointer;
+    background-color: aliceblue;
+    color: rgb(212, 4, 4);
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
+}
+.form-group label{
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.form-group input,
+.form-group textarea{
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+.save-btn{
+    background-color: rgb(22, 103, 224);
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.save-btn:hover{
+    background-color: rgb(1, 73, 182);
+    box-shadow: 0 5px 8px gray;
+}
+.error-note{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255, 82, 82, 0.43);
+    padding: 8px 10px 10px 10px;
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* animation: changeColor 500ms ease-in 20ms infinite alternate; */
+}
+.error-note span{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-group label{
+        font-size: 1rem;
+    }
+    .form-group input,
+.form-group textarea{
+    padding: 8px;
+    font-size: 0.8rem;
+}
+.modal{
+    width: 93%;
+}
+}
+@media only screen and (min-width: 1200px) {
+    .form-group label{
+        font-size: 1.4rem;
+    }
+    .form-group input,
+.form-group textarea{
+    padding: 15px;
+    font-size: 1rem;
+}
+} 
