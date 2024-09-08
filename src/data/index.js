@@ -1,11 +1,11 @@
 export const taskData = [
-    {tittle:"morning Coding",
-      description:"learn new concept of React js",
+    {tittle:"Task-1",
+      description:"read and identify the issue thoroughly and mark a label",
     },
-    {tittle:"evening Coding",
-      description:"learn how to apply new concept in my project",
+    {tittle:"Task-2",
+      description:"clone the repository and follow up the Readme guidlines",
     },
-    {tittle:"night Coding",
-      description:"apply and review new concept in own project",
+    {tittle:"Task-3",
+      description:"resolve the issue, make a seperate branch and make a pull request",
     },
   ]
